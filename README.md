@@ -26,7 +26,7 @@ Currently, the repository includes examples and projects in the following langua
 - **JavaScript**: Frontend and backend examples.
 - **Java**: Core Java programs and algorithms.
 - **C++**: Fundamental programs and data structures.
-- **BashScripting** Fundamentals or bash scripting 
+- **BashScripting** Fundamentals of bash scripting 
 - **More to come**: As I continue to learn, more languages and technologies will be added.
 
 ## Usage
