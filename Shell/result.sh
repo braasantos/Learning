@@ -57,6 +57,8 @@
 #!/bin/bash
 
 # Check if a letter was provided
+delete($1)
+{
 cd $HOME
 
 if [ -z "$1" ]; then
@@ -90,7 +92,14 @@ for dir in "$LETTER"*; do
 done
 
 if [ $found -eq 0 ]; then
-    echo "No directories starting with '$LETTER' found."
+    return 1
+else
+    return 0
+fi
+}
+
+delete($1)
+if [ $? -eq 1 ]
+    echo "No directories starting with '$1' found."
 else
     echo "Deletion complete."
-fi
